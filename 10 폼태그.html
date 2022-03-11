@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>폼태그</title>
+</head>
+<body>
+<form action="">
+<fieldset>
+<legend>개인정보</legend>
+<label for="name" required="required">이름</label>
+<input type="text" id ="name" name="name"><br>
+<label for="pwd">패스워드</label>
+<input type="password" id="pwd" name="pwd"><br>
+<label for="birthday">생년월일</label>
+<input type="date" id="birthday" name="birthday"><br>
+<label for="email">이메일</label>
+<input type="email" id="email" name="email"><br>
+<label for="file">파일첨부</label>
+<input type="file" id="file" name="file"><br>
+<label for="hidden">숨겨진 항목</label>
+<input type="hidden" name="file" value="1234"><br>
+<label for="month">년월</label>
+<input type="month" id="month" name="month"><br>
+
+<label for="quantity">수량</label>
+<input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+
+<label for="vol">범위</label>
+<input type="range" id="vol" name="vol" min="0" max="50" value="20"><br>
+
+<label for="search">검색</label>
+<input type="search" id="search" name="search"><br>
+
+<label for="phone">전화번호</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{4}[0-9]{4}"><br>
+
+</fieldset>
+<br><br>
+<label for="car">자동차</label>
+<select id="car" name="car">
+<option value="1">현대</option>
+<option value="2">기아</option>
+<option value="3">쉐보레</option>
+<option value="4">르노삼성</option>
+<option value="5">기타</option>
+</select>
+<br><br>
+<label for="message">텍스트 여러줄 입력</label>
+<textarea rows="10" cols="30">안녕하세요</textarea>
+<br><br>
+<input list="과일">
+<datalist id="과일>
+<option value="사과">
+<option value="바나나>
+<option value="귤>
+</datalist>
+<br><br>
+<label for="male">남자</label>
+<input type="radio" id="gender" name="gender" value="male">
+<label for="female">여자</label>
+<input type="radio" id="gender" name="gender" value="female">
+<br><br>
+
+<label for="vehicle1">자전거</label>
+<input type="checkbox" id="vichle1" name="vichle" value="bike">
+<label for="vehicle1">자동차</label>
+<input type="checkbox" id="vichle1" name="vichle" value="car">
+<label for="vehicle1">보트</label>
+<input type="checkbox" id="vichle1" name="vichle" value="boat">
+<input type="submit" value="전송하기">
+<input type="reset" value="취소하기">
+</form>
+</body>
+</html>
